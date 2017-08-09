@@ -9,7 +9,7 @@
  *
  */
 
-jQuery.fn.CaSP = function (settings) {
+jQuery.fn.jQSP = function (settings) {
     var config = {
         'url': null,
         'action': null,

@@ -21,7 +21,7 @@ function load_more_pending_posts(){
         $i++;
     endwhile;
     if ($markup != ""){
-        wp_send_json( array('success' => 'true', 'markup' => $markup,'state' => 'running') );
+        wp_send_json( array('success' => 'true', 'markup' => $markup, 'state' => 'running') );
     }else{
         wp_send_json( array('success' => 'true', 'state' => 'finished'));
     }
@@ -29,7 +29,7 @@ function load_more_pending_posts(){
 ```
 Plugin usage:
 ```javascript
-$('#pending_post_list').CaSP({
+$('#pending_post_list').jQSP({
     'url': "<?php echo admin_url( 'admin-ajax.php' ); ?>",
     'action': 'retrieve_pending_posts',
     'items_per_page': 5,
